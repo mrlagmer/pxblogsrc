@@ -1,0 +1,41 @@
+@import 'variables';
+
+.header {
+  position: relative;
+  background-color: $prime;
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+}
+
+.header:after {
+  background: inherit;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-5.2deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+.fbmessage {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+.text-1 {
+  animation: hideshow 5.0s ease;
+}
+
+@keyframes hideshow {
+  0% { opacity: 0; }
+  10% { opacity: 0.1; }
+  15% { opacity: 0.5; }
+  100% { opacity: 1; }
+} 

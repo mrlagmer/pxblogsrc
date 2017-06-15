@@ -1,0 +1,104 @@
+@import 'variables';
+
+.main {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 66px;
+  color: white;
+}
+
+small {
+  color: white;
+}
+
+.main-header {
+  position: relative;
+  padding: 32px;
+}
+
+.main-header-text {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+.main-header:before {
+  background-color: $second;
+  top: -50px;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-5.2deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+.main-cost {
+ 
+  position: relative;
+  padding: 32px;
+}
+
+.main-cost:before {
+  padding: 50px;
+  background-color: $blue;
+  top: 50px;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(5.2deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+.main-cost-text {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+.main-cta {
+  position: relative;
+  padding: 32px;
+}
+
+.main-cta:before {
+  background-color: $second;
+  top: -50px;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-5.2deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+.main-cta-text {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+}

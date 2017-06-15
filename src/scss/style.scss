@@ -1,0 +1,18 @@
+@import 'reset';
+@import 'home';
+@import 'main';
+
+body {
+  background-color: $prime;
+  font-family: 'Roboto', sans-serif;
+}
+
+.m-autol {
+  margin-left: auto;
+}
+
+.underline {
+  box-shadow:
+    inset 0 -0.175em $second,
+    inset 0 -0.2em black;
+}
