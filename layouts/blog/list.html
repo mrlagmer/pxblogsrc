@@ -1,0 +1,9 @@
+{{ partial "head.html" . }}
+<section class="blog">
+   <div class="bloglist">
+        {{ range .Data.Pages }}
+            {{ .Render "div"}}
+        {{ end }}
+   </div>
+</section>
+{{ partial "footer.html" . }}

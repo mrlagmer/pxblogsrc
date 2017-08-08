@@ -1,0 +1,26 @@
+@import 'variables';
+
+.bloglist {
+  display: flex;
+}
+
+.blog {
+  margin: 16px 32px;
+}
+
+.blog h1 {
+  text-align: center;
+}
+
+.blog-preview {
+  transition: 0.5s;
+  transform: skewY(-5.2deg);
+  transform-origin: 100%;
+  padding: 32px;
+  background-color: $blue;
+  width: 380px;
+  &:hover {
+    transform: skewY(0.0deg);
+    
+  }
+}
